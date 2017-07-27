@@ -4,14 +4,25 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>JavaScript</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-
+		<style>
+			img {
+				border: none !important;
+				box-shadow: none !important;
+			}
+			h1 {
+				text-transform: none !important;
+			}
+			pre {
+				box-shadow: none !important;
+			}
+		</style>
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -24,8 +35,77 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<p>JavaScript</p>
+				</section>
+				<section class="fragments">
+					<h1>Variables</h1>
+					<section class="fragments">
+						<p>we create variables whenever we want to store the value of something so that we can re-use that value later by simply referencing the variable name</p>
+					</section>
+					<section class="fragments">
+						<h3 class="fragment">declaration & assignment</h3>
+						<div class="fragment">
+							<pre>
+								<code class="hljs" data-trim>
+									var message = "Hello class";
+								</code>
+							</pre>
+						</div>
+						<p class="fragment">until otherwise assigned `message` will have the value of "Hello class"</p>
+					</section>
+					<section>
+						<p>a variable can be assigned to one of the JavaScript data types...</p>
+					</section>
+				</section>
+				<section data-transition="fade">
+					<h1>Data Types</h1>
+					<section class="fragments">
+						<h3 class="fragment">number</h3>
+						<pre>
+							<code class="hljs" data-trim="">
+								var age = 51;
+							</code>
+						</pre>
+					</section>
+					<section class="fragments">
+						<h3 class="fragment">string</h3>
+						<pre>
+							<code class="hljs" data-trim="">
+								var name = "Baldwin";
+							</code>
+						</pre>
+					</section>
+					<section class="fragments">
+						<h3 class="fragment">boolean</h3>
+						<pre>
+							<code class="hljs" data-trim="">
+							var isRaining = false;
+							</code>
+						</pre>
+					</section>
+					<section class="fragments">
+						<h3 class="fragment">array</h3>
+						<pre>
+							<code class="hljs" data-trim="">
+							var students = ['jd','reg','lexa','ariel','harry'];
+							</code>
+						</pre>
+					</section>
+					<section class="fragments">
+						<h3 class="fragment">object</h3>
+						<pre>
+							<code class="hljs" data-trim="">
+							var fewd15 = {
+								instructor: 'brandon',
+								students: ['jd','reg','lexa','ariel','harry'],
+								location: 'classroom 1',
+								capacity: 15
+							} ;
+							</code>
+						</pre>
+					</section>
+				</section>
 			</div>
 		</div>
 
